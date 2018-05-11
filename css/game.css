@@ -139,16 +139,16 @@
 }
 .top_conduit{
   width: 100%;
-  position:absolute;
+  position: absolute;
   top: 0;
-  background: url(../images/up_mod.png) ;
+  background: url(../images/up_mod.png);
 }
 .top_conduit div{
   background: url(../images/up_pipe.png) 0 bottom no-repeat;
 }
 .bottom_conduit{
   width: 100%;
-  position:absolute;
+  position: absolute;
   bottom: 0;
   background: url(../images/down_mod.png);
 }
@@ -156,58 +156,56 @@
 .bottom_conduit div{
   background: url(../images/down_pipe.png) 0 top no-repeat;
 }
-@keyframes overimg{
-	0%{top:-100px}
-	100%{top:100px}
-}
-@keyframes overmessage{
-	0%{top:500px}
-	100%{top:150px}
-}
 /*游戏结束*/
 .gameover{
   display: none;
-  
 }
 .gameover .overImg{
   position: absolute;
-  left:60px;top: 100px;
-    z-index: 101;
-	animation: overimg 1s ;
-  
+  left:60px;
+  top: 100px;
+  z-index: 101;
+	animation: overimg 1s;
+}
+@keyframes overimg{
+  0%{top: -100px}
+  100%{top: 100px}
 }
 .gameover .overMessage{
   width: 269px;
   height: 135px;
   background: url(../images/message.jpg) no-repeat;
   position: absolute;
-  left: 40px;top:150px;
+  left: 40px;
+  top: 150px;
 	animation: overmessage 0.6s ;
-    z-index: 101;
-	
+  z-index: 101;
+}
+@keyframes overmessage{
+  0%{top: 500px}
+  100%{top: 150px}
 }
 .gameover .overMessage .thisScore{
   position: absolute;
-  right:30px;top: 35px;
+  right:30px;
+  top: 35px;
   font-size: 2.5em;
-  color:#fff;
+  color: #fff;
 }
 .gameover .overMessage .historyScore{
-  position:absolute;
-  right: 30px;top: 85px;
+  position: absolute;
+  right: 30px;
+  top: 85px;
   font-size: 2em;
   color: red;
   font-weight: 100;
 }
-
 .game_restart{
   position: absolute;
   left: 130px;
   top: 300px;
-    z-index: 101;
-  
+  z-index: 101;
 	animation: res 1s;
-  
 }
 
 @keyframes res{
@@ -217,8 +215,8 @@
 
 /*积分*/
 .scroing {
-    position: absolute;
-    top: 40px;
-    text-align: center;
-    width: 100%;
+  position: absolute;
+  top: 40px;
+  text-align: center;
+  width: 100%;
 }
