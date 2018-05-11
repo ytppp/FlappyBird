@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>飞翔的小鸟游戏</title>
+</head>
+<body>
+    <div class="game-box">
+        <div class="game-top-choice">
+            <div class="choice-box">返回主菜单（Esc）</div>
+            <div class="choice-box">暂停（Space）</div>
+            <div class="choice-box">音乐（Space）</div>
+            <div class="choice-box quit">x</div>
+        </div>
+        <div class="game-main" id="game-main">
+            <div class="bird" id="bird"></div>
+        </div>
+        <div class="game-main-choice" style="display: none">
+            <ul>
+                <li>游戏难度</li>
+                <li>游戏音乐</li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+<!--
+    目标：
+        1 小鸟向下做自由落体运动
+        2 按w、s键可以控制小鸟上下移动
+        3 小鸟撞到柱子或者浏览器上下边缘，游戏结束
+    额外要求：
+        1 提供一个主界面，可以设置(在主界面以弹窗形式给出)游戏难度（大、中、小）、游戏音乐（大小、开关）
+        2 自动播放背景音乐
+        3 按esc键可以选择退出游戏到主界面
+        4 按空格键可以暂停游戏
+-->
+</body>
+</html>

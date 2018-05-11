@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body {
+    background-color: #ccc;
+}
+.game-box {
+    margin: 10px auto;
+    width: 800px;
+    height: 850px;
+    border: solid 1px #333;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-box .game-top-choice{
+    padding: 5px 10px;
+    width: calc(100% - 23px);
+    height: 39px;
+    border-bottom: solid 1px #009bf7;
+}
+.game-box .game-top-choice .choice-box {
+    display: inline-block;
+    padding: 5px 10px;
+    border-right: solid 1px #009bf7;
+    cursor: pointer;
+    color: #333;
+}
+.game-box .game-top-choice div:last-child {
+    border-right: none;
+}
+.quit {
+    float: right;
+    color: #ccc;
+    background-color: #009bf7;
+}
+.game-main {
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+}
+.bird {
+    position: absolute;
+    left: 150px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+.topG{
+    position: absolute;
+    top: 0;
+    width: 50px;
+    background: black;
+    left: 800px;
+}
+.bottomG{
+    position: absolute;
+    width: 50px;
+    background: black;
+    left: 800px;
+}
