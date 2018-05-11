@@ -95,14 +95,6 @@
   top:200px;
   background: url(../images/bird0.png) no-repeat;
 }
-@keyframes flybird_up {
-  0%{background:url(../images/up_bird0.png) no-repeat; }
-  100%{background:url(../images/up_bird1.png) no-repeat; }
-}
-@keyframes flybird_down {
-  0%{background:url(../images/down_bird0.png) no-repeat; }
-  100%{background:url(../images/down_bird1.png) no-repeat; }
-}
 .birddown{
 	transition: all 1s linear;
 	z-index: 100;
@@ -114,7 +106,11 @@
   height: 30px;
   left: 50px;
   top:200px;
-  animation: flybird_up 0.3s infinite;	
+  animation: flybird_up 0.3s infinite;
+}
+@keyframes flybird_up {
+  0%{background:url(../images/up_bird0.png) no-repeat; }
+  100%{background:url(../images/up_bird1.png) no-repeat; }
 }
 #flybird_down{
   display: none;
@@ -123,7 +119,11 @@
   height: 30px;
   left: 50px;
   top:200px;
-  animation: flybird_down 0.3s infinite;	
+  animation: flybird_down 0.3s infinite;
+}
+@keyframes flybird_down {
+  0%{background:url(../images/down_bird0.png) no-repeat; }
+  100%{background:url(../images/down_bird1.png) no-repeat; }
 }
 /*管道*/
 .conduit_group{
@@ -152,7 +152,6 @@
   bottom: 0;
   background: url(../images/down_mod.png);
 }
-
 .bottom_conduit div{
   background: url(../images/down_pipe.png) 0 top no-repeat;
 }
