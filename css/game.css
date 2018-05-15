@@ -1,5 +1,4 @@
 /*背景画布*/
-
 .canvas {
     position: relative;
     width: 343px;
@@ -8,17 +7,21 @@
     background: url(../images/bg.jpg) no-repeat;
     overflow: hidden;
 }
-
 /*游戏开始*/
 .game_start{
-  display: block;
+    display: block;
+    height: 480px;
 }
-
-.head {
+.game_start .head {
     position: absolute;
     top: 100px;
     left: 60px;
     animation: birdmove 1.5s infinite;
+}
+@keyframes birdmove {
+    0% {top: 100px;}
+    50% {top:120px;}
+    100% {top: 100px;}
 }
 .head .small_bird {
     display: inline-block;
@@ -29,22 +32,12 @@
     top: 20px;
     animation: birdbg 0.4s infinite;
 }
-
-/*head 动画*/
-
-@keyframes birdmove {
-    0% {top: 100px;}
-    50% {top:120px;}
-    100% {top: 100px;}
-}
-
 @keyframes birdbg {
   0%{background:url(../images/bird0.png) no-repeat; }
   100%{background:url(../images/bird1.png) no-repeat; }
 }
-
 /*btns 按钮组*/
-.btns {
+.game_start .btns {
     /*margin:0 auto;*/
     width: 100%;
     text-align: center;
@@ -79,7 +72,6 @@
 .slider img{
   display: inline-block;
 }
-
 @keyframes slidermove {
   0%{left: 0}
   100%{left: -343px;}
@@ -88,7 +80,6 @@
 #flybird{
   display: none;
   position: absolute;
-  /*z-index: 10;*/
   width: 40px;
   height: 30px;
   left: 50px;
@@ -100,12 +91,11 @@
 	z-index: 100;
 }
 #flybird_up{
-  display: none;
   position: absolute;
   width: 40px;
   height: 30px;
   left: 50px;
-  top:200px;
+  top: 200px;
   animation: flybird_up 0.3s infinite;
 }
 @keyframes flybird_up {
@@ -113,7 +103,6 @@
   100%{background:url(../images/up_bird1.png) no-repeat; }
 }
 #flybird_down{
-  display: none;
   position: absolute;
   width: 40px;
   height: 30px;
@@ -127,18 +116,12 @@
 }
 /*管道*/
 .conduit_group{
-	width: 100%;
-	height: auto;
 	position: absolute;
-}
-.conduitItem{
-  width: 62px;
-  height: 423px;
-  position: absolute;
-  top: 0;
+  width: 100%;
+  height: 480px;
 }
 .top_conduit{
-  width: 100%;
+  width: 62px;
   position: absolute;
   top: 0;
   background: url(../images/up_mod.png);
@@ -147,9 +130,8 @@
   background: url(../images/up_pipe.png) 0 bottom no-repeat;
 }
 .bottom_conduit{
-  width: 100%;
+  width: 62px;
   position: absolute;
-  bottom: 0;
   background: url(../images/down_mod.png);
 }
 .bottom_conduit div{
@@ -206,7 +188,6 @@
   z-index: 101;
 	animation: res 1s;
 }
-
 @keyframes res{
 	0%{left:-100px}
 	100%{left 130px}
