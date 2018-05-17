@@ -178,7 +178,6 @@
 		bird.style.display = 'block';
 		bird.style.top = '100px';
 		gameScore.innerHTML = 0;
-		bgm.play();
 		conduitCreateTimer = setInterval(create_pipe, 2000);
 		conduitMoveTimer = setInterval(judge, 30);
 		document.addEventListener('click', birdJump, false);
