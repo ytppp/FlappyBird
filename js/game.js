@@ -15,7 +15,6 @@ let thisScore = canvas.querySelector(".thisScore"); // 获取本次分数div
 let historyScore = canvas.querySelector(".historyScore");
 let scroing = canvas.querySelector("#scroing"); // 获取积分div
 let bird = canvas.querySelector('#flybird');
-
 // 创建定时器
 let conduitTimer = null; // 管道的定时器
 let downTimer = null; // 下降定时器
@@ -161,6 +160,8 @@ function gameover(){
 		localStorage.setItem('maxScore', score);
 	}
 	// 当前分数
+	thisScore.innerHTML = score;
+	// 历史最高分数
 	historyScore.innerHTML = score;
 	// 显示游戏结束
 	document.querySelector('.gameover').style.display = 'block';
